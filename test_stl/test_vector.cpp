@@ -37,6 +37,7 @@
     17.empty 判断vector是否为空
 
     18.swap 与另一个vector交换数据
+    19. assign 将当前vector的清空，并且重新赋值
 
 */
 
