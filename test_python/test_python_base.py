@@ -1,6 +1,8 @@
 
 #this is some tests for python
 
+#from test_class import pidcontorller
+import test_class
 
 
 tests = ['11', '23', '34', '32', '35', 354]
@@ -60,3 +62,12 @@ func_2(temp_lists[:])
 print(temp_lists)
 func_1(temp_lists)
 print(temp_lists)
+
+
+test = test_class.pidcontorller(10)
+temp_hz = test.gethz()
+print(temp_hz)
+test.setkp(5)
+
+control = test.setcontrol(10)
+print(test.output)
