@@ -71,3 +71,35 @@ test.setkp(5)
 
 control = test.setcontrol(10)
 print(test.output)
+
+print('***********************************************')
+#file operation
+
+with open('test_file.txt') as file_obj:
+    contents = file_obj.read()
+    #print(contents)
+    print(contents.rstrip())
+
+
+file_path = '/home/qianye/github/publish/test_base/README.md'
+with open('/home/qianye/github/publish/test_base/README.md') as file_obj_2:
+    contents = file_obj_2.read()
+    print(contents.rstrip())
+with open(file_path) as file_obj_3:
+    contents = file_obj_3.read()
+    print(contents.rstrip())
+
+with open('test_file.txt') as file_obj_4:
+    lines = file_obj_4.readlines()
+
+for line in lines:
+    print(line.rstrip())
+
+with open('test_file.txt', 'w') as file_obj_5:
+    file_obj_5.write('this is is write')
+with open('test_file.txt') as file_obj:
+    contents = file_obj.read()
+    #print(contents)
+    #print(contents.rstrip())
+
+ZerpDivisionError
