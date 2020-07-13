@@ -102,4 +102,20 @@ with open('test_file.txt') as file_obj:
     #print(contents)
     #print(contents.rstrip())
 
-ZerpDivisionError
+print('****************************************')
+'''' 试试注释 '''
+while True:
+    first_num = input('Please input fenzi\n')
+    if first_num == 'q' :
+        break
+    second_num = input('Please input fenmu\n')
+    if second_num == 'q' :
+        break
+    
+    try:
+        value = float(first_num) / float(second_num)
+        print(value)
+    except ZeroDivisionError:
+        print('you cant divide by 0!')
+    #else:
+    #    print(value)
