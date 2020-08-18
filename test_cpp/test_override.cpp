@@ -39,6 +39,14 @@ public:
 
     Time operator++(int)
     {
+        Time old = *this;
+        
+        ++(*this);
+        return old;
+    }
+
+    Time& operator++()
+    {
         second_++;
 
         if (second_ >= 60)
@@ -55,7 +63,7 @@ public:
 
         hour_ = hour_ % 24;
 
-        return Time(hour_, minute_, second_);
+        return *this;
     }
 
 private:
@@ -77,6 +85,8 @@ int main()
     time_3.show();
 
     time_3++.show();
+
+    (++time_3).show();
 
     return 0;
 }
