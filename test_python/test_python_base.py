@@ -119,3 +119,7 @@ while True:
         print('you cant divide by 0!')
     #else:
     #    print(value)
+print('****************************************')
+
+x = [1, 2, 3, 4, 5]
+x_init = x[:]

@@ -1,5 +1,7 @@
 
 
+HANDLE_TEST = False
+print(HANDLE_TEST)
 
 class controller():
 
